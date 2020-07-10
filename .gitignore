@@ -1,5 +1,9 @@
+.idea/*
+CMakeFiles/*
 build/
+*.dylib
 *.o
+*.so
 moc_*.cpp
 ui_*.h
 *~
@@ -7,7 +11,10 @@ vb-agent
 res/.directory
 .\#*
 \#*#
+CMakeCache.txt
+CMakeLists.txt
 Makefile
 Trolltech.conf
+cmake_install.cmake
 obj-i686-linux-gnu
 syscall-names.h

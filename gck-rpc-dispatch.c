@@ -63,6 +63,11 @@
 #endif /* SECCOMP */
 #include <sys/mman.h>
 
+// Gemini: Add the __APPLE__ directive.
+#if __APPLE__
+#define MSG_NOSIGNAL 0x2000 /* don't raise SIGPIPE */
+#endif
+
 /* Where we dispatch the calls to */
 static CK_FUNCTION_LIST_PTR pkcs11_module = NULL;
 
